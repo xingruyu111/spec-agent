@@ -1,0 +1,222 @@
+{
+  "generatedAt": "2026-11-08T01:29:54.998Z",
+  "provider": "anthropic",
+  "model": "deepseek-flash",
+  "rounds": 5,
+  "node": {
+    "rounds": 5,
+    "calls": 15,
+    "ok": 15,
+    "resumes": 0,
+    "usd": {
+      "mean": 0.14586159999999998,
+      "median": 0.14256,
+      "min": 0.14256,
+      "max": 0.151824
+    },
+    "durationMs": {
+      "mean": 8483.6,
+      "median": 8682,
+      "min": 7067,
+      "max": 9697
+    },
+    "inputTokens": {
+      "mean": 35565,
+      "median": 35565,
+      "min": 35565,
+      "max": 35565
+    },
+    "outputTokens": {
+      "mean": 35.2,
+      "median": 15,
+      "min": 15,
+      "max": 116
+    },
+    "cacheRead": {
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0
+    },
+    "cacheCreation": {
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "session": {
+    "rounds": 5,
+    "calls": 15,
+    "ok": 15,
+    "resumes": 10,
+    "usd": {
+      "mean": 0.054299200000000006,
+      "median": 0.0542992,
+      "min": 0.0542992,
+      "max": 0.0542992
+    },
+    "durationMs": {
+      "mean": 7700.6,
+      "median": 7998,
+      "min": 6662,
+      "max": 8487
+    },
+    "inputTokens": {
+      "mean": 12335,
+      "median": 12335,
+      "min": 12335,
+      "max": 12335
+    },
+    "outputTokens": {
+      "mean": 15,
+      "median": 15,
+      "min": 15,
+      "max": 15
+    },
+    "cacheRead": {
+      "mean": 23296,
+      "median": 23296,
+      "min": 23296,
+      "max": 23296
+    },
+    "cacheCreation": {
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "scenarioResults": [
+    {
+      "mode": "node",
+      "round": 1,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 0,
+      "durationMs": 9697,
+      "usd": 0.149804,
+      "inputTokens": 35565,
+      "outputTokens": 15,
+      "cacheRead": 0,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "session",
+      "round": 1,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 2,
+      "durationMs": 7998,
+      "usd": 0.0542992,
+      "inputTokens": 12335,
+      "outputTokens": 15,
+      "cacheRead": 23296,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "session",
+      "round": 2,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 2,
+      "durationMs": 6916,
+      "usd": 0.0542992,
+      "inputTokens": 12335,
+      "outputTokens": 15,
+      "cacheRead": 23296,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "node",
+      "round": 2,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 0,
+      "durationMs": 7687,
+      "usd": 0.14256,
+      "inputTokens": 35565,
+      "outputTokens": 15,
+      "cacheRead": 0,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "node",
+      "round": 3,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 0,
+      "durationMs": 9285,
+      "usd": 0.151824,
+      "inputTokens": 35565,
+      "outputTokens": 116,
+      "cacheRead": 0,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "session",
+      "round": 3,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 2,
+      "durationMs": 8440,
+      "usd": 0.0542992,
+      "inputTokens": 12335,
+      "outputTokens": 15,
+      "cacheRead": 23296,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "session",
+      "round": 4,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 2,
+      "durationMs": 8487,
+      "usd": 0.0542992,
+      "inputTokens": 12335,
+      "outputTokens": 15,
+      "cacheRead": 23296,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "node",
+      "round": 4,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 0,
+      "durationMs": 8682,
+      "usd": 0.14256,
+      "inputTokens": 35565,
+      "outputTokens": 15,
+      "cacheRead": 0,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "node",
+      "round": 5,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 0,
+      "durationMs": 7067,
+      "usd": 0.14256,
+      "inputTokens": 35565,
+      "outputTokens": 15,
+      "cacheRead": 0,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "session",
+      "round": 5,
+      "calls": 3,
+      "ok": 3,
+      "resumes": 2,
+      "durationMs": 6662,
+      "usd": 0.0542992,
+      "inputTokens": 12335,
+      "outputTokens": 15,
+      "cacheRead": 23296,
+      "cacheCreation": 0
+    }
+  ]
+}

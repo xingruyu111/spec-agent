@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-11-08T01:42:55.493Z",
+  "provider": "anthropic",
+  "model": "deepseek-flash",
+  "fork": {
+    "samples": 3,
+    "ok": 3,
+    "containsCode": 3,
+    "durationMs": {
+      "mean": 2703.5466666666675,
+      "median": 2728.2049000000006
+    },
+    "usd": 0.29187040000000003,
+    "cacheRead": 0
+  },
+  "newSession": {
+    "samples": 3,
+    "ok": 3,
+    "containsCode": 0,
+    "durationMs": {
+      "mean": 5577.023333333334,
+      "median": 5388.4067
+    },
+    "usd": 0.17994,
+    "cacheRead": 0
+  },
+  "rows": [
+    {
+      "trial": 1,
+      "kind": "fork",
+      "ok": true,
+      "containsCode": true,
+      "durationMs": 2778.7009,
+      "usd": 0.10139680000000001,
+      "cacheRead": 0
+    },
+    {
+      "trial": 1,
+      "kind": "new",
+      "ok": true,
+      "containsCode": false,
+      "durationMs": 3694.879799999999,
+      "usd": 0.05404,
+      "cacheRead": 0
+    },
+    {
+      "trial": 2,
+      "kind": "fork",
+      "ok": true,
+      "containsCode": true,
+      "durationMs": 2728.2049000000006,
+      "usd": 0.09523680000000001,
+      "cacheRead": 0
+    },
+    {
+      "trial": 2,
+      "kind": "new",
+      "ok": true,
+      "containsCode": false,
+      "durationMs": 5388.4067,
+      "usd": 0.057699999999999994,
+      "cacheRead": 0
+    },
+    {
+      "trial": 3,
+      "kind": "fork",
+      "ok": true,
+      "containsCode": true,
+      "durationMs": 2603.7342000000026,
+      "usd": 0.09523680000000001,
+      "cacheRead": 0
+    },
+    {
+      "trial": 3,
+      "kind": "new",
+      "ok": true,
+      "containsCode": false,
+      "durationMs": 7647.783500000005,
+      "usd": 0.0682,
+      "cacheRead": 0
+    }
+  ]
+}

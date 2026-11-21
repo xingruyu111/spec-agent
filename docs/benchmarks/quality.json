@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-11-08T01:42:03.679Z",
+  "provider": "anthropic",
+  "model": "deepseek-flash",
+  "rounds": 2,
+  "semantic": {
+    "aggregate": [
+      {
+        "mode": "node",
+        "passed": 8,
+        "total": 8,
+        "accuracy": 1,
+        "usd": 0.352984
+      },
+      {
+        "mode": "session",
+        "passed": 8,
+        "total": 8,
+        "accuracy": 1,
+        "usd": 0.3861928
+      }
+    ],
+    "results": [
+      {
+        "mode": "node",
+        "trial": 1,
+        "passed": 4,
+        "total": 4,
+        "calls": 4,
+        "usd": 0.179352
+      },
+      {
+        "mode": "session",
+        "trial": 1,
+        "passed": 4,
+        "total": 4,
+        "calls": 4,
+        "usd": 0.1927104
+      },
+      {
+        "mode": "node",
+        "trial": 2,
+        "passed": 4,
+        "total": 4,
+        "calls": 4,
+        "usd": 0.173632
+      },
+      {
+        "mode": "session",
+        "trial": 2,
+        "passed": 4,
+        "total": 4,
+        "calls": 4,
+        "usd": 0.1934824
+      }
+    ]
+  },
+  "dependentRecall": {
+    "aggregate": [
+      {
+        "mode": "node",
+        "passed": 0,
+        "total": 4,
+        "accuracy": 0,
+        "usd": 0.30376
+      },
+      {
+        "mode": "session",
+        "passed": 4,
+        "total": 4,
+        "accuracy": 1,
+        "usd": 0.2942568
+      }
+    ],
+    "results": [
+      {
+        "mode": "node",
+        "trial": 1,
+        "passed": 0,
+        "total": 2,
+        "calls": 3,
+        "usd": 0.156056
+      },
+      {
+        "mode": "session",
+        "trial": 1,
+        "passed": 2,
+        "total": 2,
+        "calls": 3,
+        "usd": 0.1544904
+      },
+      {
+        "mode": "node",
+        "trial": 2,
+        "passed": 0,
+        "total": 2,
+        "calls": 3,
+        "usd": 0.14770399999999997
+      },
+      {
+        "mode": "session",
+        "trial": 2,
+        "passed": 2,
+        "total": 2,
+        "calls": 3,
+        "usd": 0.13976639999999999
+      }
+    ]
+  }
+}

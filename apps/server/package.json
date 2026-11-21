@@ -1,0 +1,38 @@
+{
+  "name": "@spec-agent/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/server.ts",
+  "types": "./src/server.ts",
+  "exports": {
+    ".": {
+      "types": "./src/server.ts",
+      "default": "./src/server.ts"
+    }
+  },
+  "bin": {
+    "hive-server": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@deepseek-ai/cordis": "4.0.5",
+    "@deepseek-ai/dsh": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-llm": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-mcp-client": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-sdk-client": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-sdk-protocol": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-session": "0.2.1-rc.5",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@spec-agent/core": "workspace:*",
+    "@spec-agent/kernel": "workspace:*",
+    "@spec-agent/runtime": "workspace:*",
+    "@spec-agent/schema": "workspace:*",
+    "yaml": "2.8.0",
+    "zod": "4.4.3"
+  }
+}
+
+

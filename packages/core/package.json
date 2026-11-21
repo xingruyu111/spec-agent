@@ -1,0 +1,21 @@
+{
+  "name": "@spec-agent/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@spec-agent/kernel": "workspace:*",
+    "@spec-agent/schema": "workspace:*"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-11-08T01:30:39.090Z",
+  "checkpoint": {
+    "iterations": 100,
+    "ms": {
+      "mean": 118.69618899999992,
+      "median": 117.31115000000045,
+      "p95": 128.29829999999993,
+      "max": 137.86030000000028
+    }
+  },
+  "outboxEnqueue": {
+    "iterations": 1000,
+    "ms": {
+      "mean": 0.07882740000000558,
+      "median": 0.053599999999278225,
+      "p95": 0.11379999999917345,
+      "max": 5.197799999999916
+    }
+  },
+  "outboxRead20": {
+    "iterations": 50,
+    "ms": {
+      "mean": 0.34154000000009543,
+      "median": 0.23989999999957945,
+      "p95": 0.3356000000003405,
+      "max": 4.860500000000684
+    }
+  },
+  "outboxAck": {
+    "iterations": 200,
+    "ms": {
+      "mean": 0.07490599999999176,
+      "median": 0.043900000000576256,
+      "p95": 0.08479999999872234,
+      "max": 4.237499999999272
+    }
+  },
+  "notes": {
+    "checkpoint": "one git update-ref + rev-parse; session mode records 2 per LLM node",
+    "outbox": "one SQLite insert per successful node; read/ack measured separately"
+  }
+}

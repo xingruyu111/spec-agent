@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.hive/
+/runs/
+/worktrees/
+/agents/
+*.log
+.tmp-*
+.spec-agent/

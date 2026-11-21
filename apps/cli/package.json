@@ -1,0 +1,28 @@
+{
+  "name": "@spec-agent/cli",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/main.ts",
+  "types": "./src/main.ts",
+  "exports": {
+    ".": {
+      "types": "./src/main.ts",
+      "default": "./src/main.ts"
+    }
+  },
+  "bin": {
+    "spec-agent": "./src/bin.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@spec-agent/kernel": "workspace:*",
+    "@spec-agent/runtime": "workspace:*",
+    "@spec-agent/schema": "workspace:*"
+  }
+}
+
+
+

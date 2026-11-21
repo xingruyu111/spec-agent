@@ -1,0 +1,170 @@
+{
+  "generatedAt": "2026-11-08T01:38:33.138Z",
+  "provider": "anthropic",
+  "model": "deepseek-flash",
+  "rounds": 3,
+  "node": {
+    "rounds": 3,
+    "calls": 18,
+    "ok": 18,
+    "resumes": 0,
+    "usd": {
+      "mean": 0.2895973333333333,
+      "median": 0.29066000000000003,
+      "min": 0.285312,
+      "max": 0.29282
+    },
+    "durationMs": {
+      "mean": 16669.333333333332,
+      "median": 16663,
+      "min": 16625,
+      "max": 16720
+    },
+    "inputTokens": {
+      "mean": 71148,
+      "median": 71148,
+      "min": 71148,
+      "max": 71148
+    },
+    "outputTokens": {
+      "mean": 35.666666666666664,
+      "median": 36,
+      "min": 35,
+      "max": 36
+    },
+    "cacheRead": {
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0
+    },
+    "cacheCreation": {
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "session": {
+    "rounds": 3,
+    "calls": 18,
+    "ok": 18,
+    "resumes": 15,
+    "usd": {
+      "mean": 0.0637224,
+      "median": 0.0636624,
+      "min": 0.0636624,
+      "max": 0.06384240000000001
+    },
+    "durationMs": {
+      "mean": 14167,
+      "median": 14458,
+      "min": 12953,
+      "max": 15090
+    },
+    "inputTokens": {
+      "mean": 12803,
+      "median": 12798,
+      "min": 12798,
+      "max": 12813
+    },
+    "outputTokens": {
+      "mean": 38,
+      "median": 36,
+      "min": 36,
+      "max": 42
+    },
+    "cacheRead": {
+      "mean": 58752,
+      "median": 58752,
+      "min": 58752,
+      "max": 58752
+    },
+    "cacheCreation": {
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "scenarioResults": [
+    {
+      "mode": "node",
+      "round": 1,
+      "calls": 6,
+      "ok": 6,
+      "resumes": 0,
+      "durationMs": 16663,
+      "usd": 0.29282,
+      "inputTokens": 71148,
+      "outputTokens": 36,
+      "cacheRead": 0,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "session",
+      "round": 1,
+      "calls": 6,
+      "ok": 6,
+      "resumes": 5,
+      "durationMs": 12953,
+      "usd": 0.06384240000000001,
+      "inputTokens": 12813,
+      "outputTokens": 42,
+      "cacheRead": 58752,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "session",
+      "round": 2,
+      "calls": 6,
+      "ok": 6,
+      "resumes": 5,
+      "durationMs": 14458,
+      "usd": 0.0636624,
+      "inputTokens": 12798,
+      "outputTokens": 36,
+      "cacheRead": 58752,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "node",
+      "round": 2,
+      "calls": 6,
+      "ok": 6,
+      "resumes": 0,
+      "durationMs": 16625,
+      "usd": 0.29066000000000003,
+      "inputTokens": 71148,
+      "outputTokens": 35,
+      "cacheRead": 0,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "node",
+      "round": 3,
+      "calls": 6,
+      "ok": 6,
+      "resumes": 0,
+      "durationMs": 16720,
+      "usd": 0.285312,
+      "inputTokens": 71148,
+      "outputTokens": 36,
+      "cacheRead": 0,
+      "cacheCreation": 0
+    },
+    {
+      "mode": "session",
+      "round": 3,
+      "calls": 6,
+      "ok": 6,
+      "resumes": 5,
+      "durationMs": 15090,
+      "usd": 0.0636624,
+      "inputTokens": 12798,
+      "outputTokens": 36,
+      "cacheRead": 58752,
+      "cacheCreation": 0
+    }
+  ]
+}

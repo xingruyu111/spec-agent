@@ -1,0 +1,171 @@
+{
+  "generatedAt": "2026-11-08T01:48:02.773Z",
+  "rows": [
+    {
+      "protocol": "anthropic",
+      "model": "deepseek-flash",
+      "status": 200,
+      "ok": true,
+      "durationMs": 738.1774,
+      "textLength": 2,
+      "inputTokens": 33,
+      "outputTokens": 31
+    },
+    {
+      "protocol": "anthropic",
+      "model": "deepseek-flash",
+      "status": 200,
+      "ok": true,
+      "durationMs": 935.4277999999999,
+      "textLength": 2,
+      "inputTokens": 33,
+      "outputTokens": 8
+    },
+    {
+      "protocol": "anthropic",
+      "model": "deepseek-flash",
+      "status": 200,
+      "ok": true,
+      "durationMs": 587.9479999999999,
+      "textLength": 2,
+      "inputTokens": 33,
+      "outputTokens": 2
+    },
+    {
+      "protocol": "anthropic",
+      "model": "deepseek-v4-pro",
+      "status": 200,
+      "ok": true,
+      "durationMs": 1123.7887,
+      "textLength": 2,
+      "inputTokens": 86,
+      "outputTokens": 25
+    },
+    {
+      "protocol": "anthropic",
+      "model": "deepseek-v4-pro",
+      "status": 200,
+      "ok": true,
+      "durationMs": 880.5186000000003,
+      "textLength": 2,
+      "inputTokens": 86,
+      "outputTokens": 30
+    },
+    {
+      "protocol": "anthropic",
+      "model": "deepseek-v4-pro",
+      "status": 200,
+      "ok": true,
+      "durationMs": 1062.4323999999997,
+      "textLength": 2,
+      "inputTokens": 86,
+      "outputTokens": 33
+    },
+    {
+      "protocol": "openai",
+      "model": "deepseek-flash",
+      "status": 200,
+      "ok": true,
+      "durationMs": 547.7878000000001,
+      "textLength": 2,
+      "inputTokens": 33,
+      "outputTokens": 25
+    },
+    {
+      "protocol": "openai",
+      "model": "deepseek-flash",
+      "status": 200,
+      "ok": true,
+      "durationMs": 769.4417999999996,
+      "textLength": 2,
+      "inputTokens": 33,
+      "outputTokens": 11
+    },
+    {
+      "protocol": "openai",
+      "model": "deepseek-flash",
+      "status": 200,
+      "ok": true,
+      "durationMs": 1191.2597999999998,
+      "textLength": 2,
+      "inputTokens": 33,
+      "outputTokens": 28
+    },
+    {
+      "protocol": "openai",
+      "model": "deepseek-v4-pro",
+      "status": 200,
+      "ok": true,
+      "durationMs": 634.2696999999998,
+      "textLength": 2,
+      "inputTokens": 86,
+      "outputTokens": 18
+    },
+    {
+      "protocol": "openai",
+      "model": "deepseek-v4-pro",
+      "status": 200,
+      "ok": true,
+      "durationMs": 1018.0991999999987,
+      "textLength": 2,
+      "inputTokens": 86,
+      "outputTokens": 20
+    },
+    {
+      "protocol": "openai",
+      "model": "deepseek-v4-pro",
+      "status": 200,
+      "ok": true,
+      "durationMs": 861.1675000000014,
+      "textLength": 2,
+      "inputTokens": 86,
+      "outputTokens": 34
+    }
+  ],
+  "matrix": [
+    {
+      "protocol": "anthropic",
+      "model": "deepseek-flash",
+      "samples": 3,
+      "ok": 3,
+      "durationMs": {
+        "mean": 753.8510666666666,
+        "median": 738.1774
+      },
+      "textLength": 6
+    },
+    {
+      "protocol": "openai",
+      "model": "deepseek-flash",
+      "samples": 3,
+      "ok": 3,
+      "durationMs": {
+        "mean": 836.1631333333331,
+        "median": 769.4417999999996
+      },
+      "textLength": 6
+    },
+    {
+      "protocol": "anthropic",
+      "model": "deepseek-v4-pro",
+      "samples": 3,
+      "ok": 3,
+      "durationMs": {
+        "mean": 1022.2465666666667,
+        "median": 1062.4323999999997
+      },
+      "textLength": 6
+    },
+    {
+      "protocol": "openai",
+      "model": "deepseek-v4-pro",
+      "samples": 3,
+      "ok": 3,
+      "durationMs": {
+        "mean": 837.8454666666667,
+        "median": 861.1675000000014
+      },
+      "textLength": 6
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "spec-agent",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.28.5",
+  "scripts": {
+    "spec": "tsx apps/cli/src/bin.ts",
+    "dev:server": "tsx apps/server/src/index.ts --projects-file .spec-agent/projects.json",
+    "dev:web": "pnpm --filter @spec-agent/web dev",
+    "build:web": "pnpm --filter @spec-agent/web build",
+    "serve": "tsx apps/server/src/index.ts --web apps/web/dist --projects-file .spec-agent/projects.json",
+    "typecheck": "pnpm -r --if-present typecheck && tsc -p tsconfig.json",
+    "test": "vitest run --coverage",
+    "test:unit": "vitest run --exclude \"tests/integration/**\"",
+    "test:integration": "vitest run tests/integration",
+    "test:quick": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@spec-agent/cli": "workspace:*",
+    "@spec-agent/core": "workspace:*",
+    "@spec-agent/kernel": "workspace:*",
+    "@spec-agent/runtime": "workspace:*",
+    "@spec-agent/schema": "workspace:*",
+    "@spec-agent/server": "workspace:*",
+    "@spec-agent/ui": "workspace:*",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitest/coverage-v8": "5.0.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
+

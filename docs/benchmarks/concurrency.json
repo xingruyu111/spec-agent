@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-11-08T01:46:59.808Z",
+  "provider": "anthropic",
+  "model": "deepseek-flash",
+  "concurrency": 5,
+  "calls": 15,
+  "ok": 15,
+  "failed": [],
+  "wallMs": 15104.7155,
+  "perCallMs": {
+    "mean": 4606.177373333334,
+    "median": 4467.6951,
+    "p95": 6085.1945,
+    "max": 6085.1945
+  },
+  "totalUsd": 0.8003000000000001,
+  "samples": [
+    {
+      "id": 0,
+      "step": 1,
+      "durationMs": 4467.6951,
+      "usd": 0.045868,
+      "ok": true,
+      "sessionId": "533e593d-6fa6-4199-a8ae-326402898a5e",
+      "textLength": 5
+    },
+    {
+      "id": 4,
+      "step": 1,
+      "durationMs": 5015.8791,
+      "usd": 0.053128,
+      "ok": true,
+      "sessionId": "d3f51efb-349e-4f05-950c-c3bb78e67aac",
+      "textLength": 5
+    },
+    {
+      "id": 2,
+      "step": 1,
+      "durationMs": 5214.7406,
+      "usd": 0.051648,
+      "ok": true,
+      "sessionId": "b4bd5665-67a1-4cd7-9414-de79e4fd2fa4",
+      "textLength": 5
+    },
+    {
+      "id": 1,
+      "step": 1,
+      "durationMs": 5234.175499999999,
+      "usd": 0.045868,
+      "ok": true,
+      "sessionId": "1168c0f2-3630-4cff-bb79-05c7752a8ed2",
+      "textLength": 5
+    },
+    {
+      "id": 3,
+      "step": 1,
+      "durationMs": 6085.1945,
+      "usd": 0.053268,
+      "ok": true,
+      "sessionId": "587e748c-5138-43c6-a31e-1d4e98c38adb",
+      "textLength": 5
+    },
+    {
+      "id": 0,
+      "step": 2,
+      "durationMs": 3671.2466000000004,
+      "usd": 0.0497328,
+      "ok": true,
+      "sessionId": "533e593d-6fa6-4199-a8ae-326402898a5e",
+      "textLength": 8
+    },
+    {
+      "id": 2,
+      "step": 2,
+      "durationMs": 3928.5906000000004,
+      "usd": 0.0548528,
+      "ok": true,
+      "sessionId": "b4bd5665-67a1-4cd7-9414-de79e4fd2fa4",
+      "textLength": 8
+    },
+    {
+      "id": 4,
+      "step": 2,
+      "durationMs": 5032.9890000000005,
+      "usd": 0.056952800000000005,
+      "ok": true,
+      "sessionId": "d3f51efb-349e-4f05-950c-c3bb78e67aac",
+      "textLength": 8
+    },
+    {
+      "id": 1,
+      "step": 2,
+      "durationMs": 4946.658300000001,
+      "usd": 0.0490728,
+      "ok": true,
+      "sessionId": "1168c0f2-3630-4cff-bb79-05c7752a8ed2",
+      "textLength": 8
+    },
+    {
+      "id": 3,
+      "step": 2,
+      "durationMs": 4536.876000000001,
+      "usd": 0.0564664,
+      "ok": true,
+      "sessionId": "587e748c-5138-43c6-a31e-1d4e98c38adb",
+      "textLength": 8
+    },
+    {
+      "id": 0,
+      "step": 3,
+      "durationMs": 4048.1749,
+      "usd": 0.0527672,
+      "ok": true,
+      "sessionId": "533e593d-6fa6-4199-a8ae-326402898a5e",
+      "textLength": 19
+    },
+    {
+      "id": 2,
+      "step": 3,
+      "durationMs": 4294.4845000000005,
+      "usd": 0.0582416,
+      "ok": true,
+      "sessionId": "b4bd5665-67a1-4cd7-9414-de79e4fd2fa4",
+      "textLength": 19
+    },
+    {
+      "id": 4,
+      "step": 3,
+      "durationMs": 3985.7875999999997,
+      "usd": 0.0601232,
+      "ok": true,
+      "sessionId": "d3f51efb-349e-4f05-950c-c3bb78e67aac",
+      "textLength": 19
+    },
+    {
+      "id": 1,
+      "step": 3,
+      "durationMs": 4239.1158,
+      "usd": 0.0524616,
+      "ok": true,
+      "sessionId": "1168c0f2-3630-4cff-bb79-05c7752a8ed2",
+      "textLength": 19
+    },
+    {
+      "id": 3,
+      "step": 3,
+      "durationMs": 4391.0525,
+      "usd": 0.0598488,
+      "ok": true,
+      "sessionId": "587e748c-5138-43c6-a31e-1d4e98c38adb",
+      "textLength": 19
+    }
+  ]
+}
