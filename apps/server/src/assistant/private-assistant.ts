@@ -135,7 +135,8 @@ export class PrivateAssistant {
         signal: controller.signal,
       });
       text = output.text?.trim() ?? '';
-    } catch {
+    } catch (error) {
+      console.warn('[private-assistant] answer failed:', error);
       text = '';
     } finally {
       clearTimeout(timer);
@@ -282,7 +283,8 @@ export class PrivateAssistant {
         },
       });
       text = result.text?.trim() || streamed.trim();
-    } catch {
+    } catch (error) {
+      console.warn('[private-assistant] stream failed:', error);
       text = '';
     }
     if (!text) {

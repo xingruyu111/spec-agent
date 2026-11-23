@@ -107,7 +107,11 @@ export function prepareMcpToolsPatch(
       'utf8',
     );
     return patchPath;
-  } catch {
+  } catch (error) {
+    console.warn(
+      '[mcp-profile] install failed:',
+      error instanceof Error ? error.message : error,
+    );
     return undefined;
   }
 }

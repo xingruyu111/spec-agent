@@ -19,6 +19,7 @@ import {
 import { migrateLegacyProjectData } from '@spec-agent/runtime';
 import { installDshLiveBridge } from './dsh-live-bridge.js';
 import { prepareMcpToolsPatch } from './mcp-profile.js';
+import { permissionPatchYaml } from './permission-patch.js';
 
 export type ChatDelta = {
   kind: 'text' | 'reasoning';
@@ -176,21 +177,11 @@ export class DshChatEngine implements ChatEngine {
       routeModel,
     );
     const approvalPatch = join(dshHome, `${routeId}.approval.patch.yml`);
-    writeFileSync(
-      approvalPatch,
-      [
-        '# Headless chat: keep the sandbox, do not block on approval prompts.',
-        '- id: approval',
-        '  config:',
-        '    policy: never',
-        '',
-      ].join('\n'),
-      'utf8',
-    );
+    writeFileSync(approvalPatch, permissionPatchYaml, 'utf8');
     const mcpPatch = prepareMcpToolsPatch(
       dshHome,
       this.options.mcpToolsScript ??
-        fileURLToPath(new URL('../mcp/spec-agent-tools.mjs', import.meta.url)),
+        fileURLToPath(new URL('../../mcp/spec-agent-tools.mjs', import.meta.url)),
       projectRoot,
       basename(projectRoot),
       process.env.SPEC_AGENT_SERVER_URL ?? 'http://127.0.0.1:4317',
@@ -375,3 +366,4 @@ function resolveDshBin(require: NodeJS.Require): string | undefined {
     return undefined;
   }
 }
+

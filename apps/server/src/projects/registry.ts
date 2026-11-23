@@ -15,8 +15,15 @@ export function loadProjectsFile(file: string): ProjectConfig[] | null {
     const id = typeof item.id === 'string' ? item.id.trim() : '';
     const name = typeof item.name === 'string' ? item.name.trim() : '';
     const root = typeof item.root === 'string' ? item.root.trim() : '';
+    const repoPath =
+      typeof item.repoPath === 'string' ? item.repoPath.trim() : '';
     if (!id || !name || !root) throw new Error(`项目注册表条目缺少 id/name/root：${file}`);
-    return { id, name, root: resolve(root) };
+    return {
+      id,
+      name,
+      root: resolve(root),
+      ...(repoPath ? { repoPath: resolve(repoPath) } : {}),
+    };
   });
   assertProjects(projects);
   return projects;

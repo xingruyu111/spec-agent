@@ -34,6 +34,7 @@ import {
   dshProviderPatchYaml,
 } from './dsh-chat.js';
 import { prepareMcpToolsPatch } from './mcp-profile.js';
+import { permissionPatchYaml } from './permission-patch.js';
 
 const execFileAsync = promisify(execFile);
 
@@ -224,17 +225,7 @@ export class DshAgentRuntime implements AgentRuntime {
       'utf8',
     );
     const approvalPatchPath = join(dshHome, `${routeId}.approval.patch.yml`);
-    writeFileSync(
-      approvalPatchPath,
-      [
-        '# Workflow nodes run headlessly: sandboxing stays on, approval prompts do not.',
-        '- id: approval',
-        '  config:',
-        '    policy: never',
-        '',
-      ].join('\n'),
-      'utf8',
-    );
+    writeFileSync(approvalPatchPath, permissionPatchYaml, 'utf8');
 
     const orgRoot =
       input.workspaceRoot ??
@@ -244,7 +235,7 @@ export class DshAgentRuntime implements AgentRuntime {
     const mcpPatchPath = prepareMcpToolsPatch(
       dshHome,
       this.options.mcpToolsScript ??
-        fileURLToPath(new URL('../mcp/spec-agent-tools.mjs', import.meta.url)),
+        fileURLToPath(new URL('../../mcp/spec-agent-tools.mjs', import.meta.url)),
       orgRoot,
       basename(orgRoot),
       this.options.mcpServerUrl ??
@@ -524,3 +515,5 @@ function resolveDshBin(require: NodeJS.Require): string | undefined {
     return undefined;
   }
 }
+
+
